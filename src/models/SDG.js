@@ -27,8 +27,8 @@ const COLOR_SCHEME = [{
   },{
     colorName: 'yellow',
     tileColor: '#f2bc3c',
-    mapColor: '#ffea00',
-    mapHoverColor: '#f2bc3c',
+    mapColor: '#ffcf00',
+    mapHoverColor: '#e3b800',
     description: 'Challenges remain'
   },{
     colorName: 'orange',
