@@ -148,8 +148,8 @@ class App extends Component {
               <ToolbarButton component='a' href="http://unsdsn.org/" target='_blank' rel='noopener noreferrer'>
                 <img src='/images/SDSN-logo.png' alt='SDSN logo' style={{maxHeight: 60}}/>
               </ToolbarButton>
-              <ToolbarButton component='a' href="http://www.telos.nl/" target='_blank' rel='noopener noreferrer'>
-                <img src='/images/telos-logo.png' alt='Telos logo' style={{maxHeight: 60}}/>
+              <ToolbarButton component='a' href="https://sdgcafrica.org/" target='_blank' rel='noopener noreferrer'>
+                <img src='/images/sdgca-logo.png' alt='SDGCA logo' style={{maxHeight: 60}}/>
               </ToolbarButton>
             </Hidden>
             </Toolbar>

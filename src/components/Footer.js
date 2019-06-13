@@ -44,8 +44,8 @@ function Footer(props) {
             {' '}
             and the
             {' '}
-            <a href="http://www.telos.nl/" target='_blank' rel='noopener noreferrer'>
-              Brabant Center for Sustainable Development
+            <a href="https://sdgcafrica.org/" target='_blank' rel='noopener noreferrer'>
+              Sustainable Development Goals Center for Africa
             </a>
             .
             <br/><br/>
@@ -86,8 +86,8 @@ function Footer(props) {
       </Grid>
       <Grid item md={3} sm={6} xs={12}>
         <Box padding={2}>
-          <a className='logo' href="http://www.telos.nl/" target='_blank' rel='noopener noreferrer'>
-            <img src='/images/telos-logo.png' alt='Telos logo' style={{maxHeight: 60}}/>
+          <a className='logo' href="https://sdgcafrica.org/" target='_blank' rel='noopener noreferrer'>
+            <img src='/images/sdgca-logo.png' alt='SDGCA logo' style={{maxHeight: 60}}/>
           </a>
         </Box>
       </Grid>
