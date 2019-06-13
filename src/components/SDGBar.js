@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Bar = styled.div`
   width: 400px;
   background: #eee;
+  min-height: 24px;
 `
 
 const Block = styled.div`
@@ -21,6 +22,9 @@ class SDGBar extends PureComponent {
     const NUMBER_OF_GOALS = 15
 
     const blocks = sdgs.map((sdg) => {
+      if(sdg.score === null)
+        return null
+
       // width of block: max-width * score-in-percent
       // max width of block: 100/num-goals
       const blockWidth = 100/NUMBER_OF_GOALS * (Number(sdg.score)/100.0)

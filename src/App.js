@@ -78,11 +78,17 @@ const GlobalStyle = createGlobalStyle`
     &.sdg13 {
       background: rgb(65, 119 ,68 );
     }
+    &.sdg14 {
+      background: rgb(52, 139 ,186 );
+    }
     &.sdg15 {
       background: rgb(100 ,167, 74 ) ;
     }
     &.sdg16 {
       background: rgb(31, 101 ,137 ) ;
+    }
+    &.sdg17 {
+      background: rgb(26, 65 ,86 );
     }
   }
 `
