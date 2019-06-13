@@ -9,7 +9,7 @@ class Indicator {
 
   // rounds the score to two decimal places
   roundedScore() {
-    if(!this.score)
+    if(this.score === null || this.score.length === 0)
       return 'N/A'
 
     return (+this.score.toFixed(2)).toString()

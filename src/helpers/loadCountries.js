@@ -4,19 +4,23 @@ import Indicator from '../models/Indicator'
 
 // initialize an inidivdual SDG
 const initSDG = (sdgNumber, sdgData) => {
-  const indicators = []
-    // Object
-    //   .keys(sdgData)
-    //   .filter(key => key.startsWith(`${sdgNumber}.`))
-    //   .map(key => {
-    //     const label = key.split(" : ").pop()
-    //
-    //     return new Indicator({
-    //       label: label,
-    //       score: sdgData[key],
-    //       status: sdgData[`Dashboard: ${label}`]
-    //     })
-    //   })
+  const indicators =
+    Object
+      .keys(sdgData)
+      .filter(key => new RegExp(sdgNumber + "\\.\\d\\d [^_]{2}").test(key))
+      .map(key => {
+        const [indicatorNumber, label] = key.split(/ (.+)/).filter(x => x)
+
+        // TODO: Refactor .findByObjectKey
+        const score  = sdgData[key]
+        const status = sdgData[Object.keys(sdgData).find(key => key.startsWith(`${indicatorNumber} __COLOR__`))]
+
+        return new Indicator({
+          label: label,
+          score: score,
+          status: status
+        })
+      })
 
   return new SDG({
     number:     Number(sdgNumber),

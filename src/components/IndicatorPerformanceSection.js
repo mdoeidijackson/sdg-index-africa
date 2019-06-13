@@ -57,12 +57,12 @@ const FullSizeImage = styled.img`
 
 class IndicatorPerformanceSection extends PureComponent {
   render() {
-    const { city, focus, display } = this.props
+    const { country, focus, display } = this.props
 
-    if(!display || !city)
+    if(!display || !country)
       return null;
 
-    const sdg = city.getSDG(focus)
+    const sdg = country.getSDG(focus)
     const { score } = sdg
 
     const indicators = sdg.indicators.map(indicator => {
