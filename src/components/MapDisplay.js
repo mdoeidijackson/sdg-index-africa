@@ -96,7 +96,7 @@ class MapDisplay extends PureComponent {
     })
 
     return(
-      <MapSvg path="/images/europe.svg">
+      <MapSvg path="/images/africa.svg">
         {proxies}
       </MapSvg>
     );
