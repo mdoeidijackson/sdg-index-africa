@@ -95,13 +95,24 @@ class Map extends PureComponent {
   }
 
   showTooltip = event => {
-    const { currentTarget } = event;
+    const { currentTarget, clientY, clientX } = event;
 
     this.setState(state => ({
       tooltipShow: true,
-      tooltipAnchor: currentTarget,
+      tooltipAnchor: {
+        clientWidth: 0,
+        clientHeight: 0,
+        getBoundingClientRect: () => ({
+          width: 0,
+          height: 0,
+          top: clientY,
+          bottom: clientY,
+          left: clientX,
+          right: clientX
+        }),
+      },
       tooltipScore: currentTarget.getAttribute('data-score'),
-      tooltipCity: currentTarget.getAttribute('data-city'),
+      tooltipCountry: currentTarget.getAttribute('data-country'),
       tooltipLabel: currentTarget.getAttribute('data-label')
     }));
   };
