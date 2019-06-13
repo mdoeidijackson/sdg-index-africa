@@ -1,7 +1,5 @@
 import React, { Fragment, PureComponent } from 'react'
-import Box from '@material-ui/core/Box'
 import GridList from '@material-ui/core/GridList'
-import Typography from '@material-ui/core/Typography'
 import withWidth from '@material-ui/core/withWidth'
 
 import SDGTile from '../components/SDGTile'
@@ -11,7 +9,7 @@ class SDGTileCollection extends PureComponent {
   render() {
     const { resetMapFocus, setMapFocus,
             columnsMD, columnsSM, columnsXS,
-            width, exclude, backgroundColor } = this.props
+            width, exclude = [], backgroundColor } = this.props
 
     let columns = null
 
@@ -51,13 +49,6 @@ class SDGTileCollection extends PureComponent {
         <GridList cols={columns} spacing={8} cellHeight='auto'>
           {tiles}
         </GridList>
-        <Box paddingTop={1}>
-          <Typography variant='caption'>
-            Due to lack of data availability at the subnational level,
-            SDG 14 (Life Below Water) and SDG 17 (Partnerships for the Goals)
-            were not considered in the prototype report.
-          </Typography>
-        </Box>
       </Fragment>
     );
   }

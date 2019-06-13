@@ -91,10 +91,9 @@ class HomePage extends PureComponent {
             .
           </Typography>
           <SDGTileCollection
-            columnsMD={8}
-            columnsSM={4}
+            columnsMD={9}
+            columnsSM={6}
             columnsXS={2}
-            exclude={[14, 17]}
             {...{setMapFocus, resetMapFocus}} />
         </Box>
 

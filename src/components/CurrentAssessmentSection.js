@@ -32,7 +32,7 @@ const Description = styled(Typography)`
 
 class CurrentAssessmentSection extends PureComponent {
   render() {
-    const { city, setMapFocus, resetMapFocus } = this.props
+    const { country, setMapFocus, resetMapFocus } = this.props
 
     const ratings = SDG.colorScheme().map(option => {
       return (
@@ -55,14 +55,13 @@ class CurrentAssessmentSection extends PureComponent {
           <Grid container spacing={3}>
             <Grid item xs={12} md={9}>
               <SDGTileCollection
-                columns={5}
-                columnsMD={5}
-                columnsSM={3}
+                columnsMD={6}
+                columnsSM={4}
                 columnsXS={2}
                 backgroundColor={(sdg) => {
-                  return city && city.getSDG(sdg).tileStatusColor()
+                  return country && country.getSDG(sdg).tileStatusColor()
                 }}
-                exclude={[14, 17, 18]}
+                exclude={[18]}
                 {...{setMapFocus, resetMapFocus}} />
             </Grid>
             <Grid item xs={12} md={3}>
