@@ -9,11 +9,11 @@ import Typography from '@material-ui/core/Typography'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import HomePage from './pages/HomePage'
-import CityPage from './pages/CityPage'
+import CountryPage from './pages/CountryPage'
 import Map from './components/Map'
 import Footer from './components/Footer'
 
-import loadCities from './helpers/loadCities'
+import loadCountries from './helpers/loadCountries'
 
 const SiteHeader = styled(AppBar)`
   && {
@@ -101,12 +101,12 @@ const ToolbarButton = styled(ButtonBase)`
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { cities: [], focus: null };
+    this.state = { countries: [], focus: null };
   }
 
   componentDidMount() {
-    loadCities(cities => {
-      this.setState({ cities: cities })
+    loadCountries(countries => {
+      this.setState({ countries: countries })
     })
   }
 
@@ -122,7 +122,7 @@ class App extends Component {
   }
 
   render() {
-    const { focus, cities } = this.state
+    const { focus, countries } = this.state
 
     return (
       <HashRouter basename="/">
@@ -152,7 +152,7 @@ class App extends Component {
 
         <Map
           focus={focus}
-          cities={cities} />
+          countries={countries} />
 
         <Container style={{background: '#f8f9fa', position: 'relative'}}>
           <Route
@@ -164,17 +164,17 @@ class App extends Component {
                         focus={focus}
                         setMapFocus={this.setMapFocus}
                         resetMapFocus={this.resetMapFocus}
-                        cities={cities} />
+                        countries={countries} />
             }} />
           <Route
-            path="/:city"
+            path="/:country"
             render={(props) => {
-              return <CityPage
+              return <CountryPage
                         {...props}
                         focus={focus}
                         setMapFocus={this.setMapFocus}
                         resetMapFocus={this.resetMapFocus}
-                        cities={cities} />
+                        countries={countries} />
             }} />
 
             <Footer />

@@ -69,7 +69,7 @@ const SDGIndexTableHead = styled.th`
   }
 `
 
-const CityColumn = styled(Link)`
+const CountryColumn = styled(Link)`
   font-weight: 500;
   color: black;
   text-decoration: none;
@@ -116,19 +116,19 @@ const options = {
   }
 };
 
-class CityIndex extends PureComponent {
+class CountryIndex extends PureComponent {
   render() {
     const { showTooltip, hideTooltip } = this.props;
 
     const columns = [
       {
-        name: "City",
+        name: "Country",
         options: {
           sort: true,
           sortDirection: null,
           customHeadRender: customHead,
-          customBodyRender: (city, tableMeta, updateValue) => {
-            return <CityColumn to={city.url()}>{city.name}</CityColumn>
+          customBodyRender: (country, tableMeta, updateValue) => {
+            return <CountryColumn to={country.url()}>{country.name}</CountryColumn>
           },
         },
       },
@@ -157,7 +157,10 @@ class CityIndex extends PureComponent {
         options: {
           sort: true,
           sortDirection: 'asc',
-          customHeadRender: customHead
+          customHeadRender: customHead,
+          customBodyRender: (rank, tableMeta, updateValue) => {
+            return (rank.rank ? rank.rank : "")
+          },
         },
       },
       {
@@ -169,9 +172,9 @@ class CityIndex extends PureComponent {
       },
     ]
 
-    const { cities } = this.props
-    const data = cities && cities.map(city => {
-      return [city, city.region, city.sdgs, city.rank, city.score]
+    const { countries } = this.props
+    const data = countries && countries.map(country => {
+      return [country, country.region, country.sdgs, country.rank, country.score]
     })
 
     return (
@@ -180,7 +183,7 @@ class CityIndex extends PureComponent {
           The European Cities SDG Index
         </Typography>
         <Typography variant='body1' style={{color: '#6c757d'}} gutterBottom>
-          Select a city to see its full profile.
+          Select a country to see its full profile.
         </Typography>
 
         <SDGIndexTable
@@ -193,4 +196,4 @@ class CityIndex extends PureComponent {
   }
 }
 
-export default CityIndex
+export default CountryIndex

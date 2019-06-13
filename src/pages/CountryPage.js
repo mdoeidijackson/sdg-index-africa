@@ -8,21 +8,21 @@ import Divider from '../components/Divider'
 import CurrentAssessmentSection from '../components/CurrentAssessmentSection'
 import IndicatorPerformanceSection from '../components/IndicatorPerformanceSection'
 
-class CityPage extends Component {
+class CountryPage extends Component {
   render() {
-    const citySlug = this.props.match.params.city
-    const { focus, cities, setMapFocus, resetMapFocus } = this.props
+    const countrySlug = this.props.match.params.country
+    const { focus, countries, setMapFocus, resetMapFocus } = this.props
 
-    const city = cities.find(city => city.slug() === citySlug.toString())
+    const country = countries.find(country => country.slug() === countrySlug.toString())
 
-    const { name, region } = city || {}
+    const { name, region } = country || {}
 
     return (
       <Paper style={{padding: 24, paddingTop: 16, position: 'relative'}}>
         <Box marginBottom={2} paddingTop={1} style={{position: 'sticky', top: 0, background: 'white', zIndex: 100}}>
           <Link to='/' style={{float: 'right'}}>
             <Typography variant='body2'>
-              Back to cities list
+              Back to countries list
             </Typography>
           </Link>
           <Typography variant="h3">
@@ -35,12 +35,12 @@ class CityPage extends Component {
         </Box>
 
         <CurrentAssessmentSection
-          {...{city, setMapFocus, resetMapFocus}}
+          {...{country, setMapFocus, resetMapFocus}}
           />
 
         <IndicatorPerformanceSection
           display={focus ? true : false}
-          {...{city, focus}}
+          {...{country, focus}}
           />
 
       </Paper>
@@ -48,4 +48,4 @@ class CityPage extends Component {
   }
 }
 
-export default CityPage
+export default CountryPage

@@ -6,7 +6,7 @@ import Box from '@material-ui/core/Box';
 import styled from 'styled-components'
 
 import SDGTileCollection from '../components/SDGTileCollection'
-import CityIndex from '../components/CityIndex'
+import CountryIndex from '../components/CountryIndex'
 
 const Tooltip = styled(Popper)`
   font-size: .8rem;
@@ -67,7 +67,7 @@ class HomePage extends PureComponent {
   };
 
   render() {
-    const { focus, resetMapFocus, setMapFocus, cities } = this.props
+    const { focus, resetMapFocus, setMapFocus, countries } = this.props
 
     const { tooltipShow, tooltipAnchor, tooltipLabel, tooltipScore } = this.state
 
@@ -98,8 +98,8 @@ class HomePage extends PureComponent {
             {...{setMapFocus, resetMapFocus}} />
         </Box>
 
-        <CityIndex
-          cities={cities}
+        <CountryIndex
+          countries={countries}
           showTooltip={this.showTooltip}
           hideTooltip={this.hideTooltip} />
         <Tooltip
