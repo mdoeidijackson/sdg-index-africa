@@ -7,7 +7,7 @@ const initSDG = (sdgNumber, sdgData) => {
   const indicators =
     Object
       .keys(sdgData)
-      .filter(key => new RegExp(sdgNumber + "\\.\\d\\d [^_]{2}").test(key))
+      .filter(key => new RegExp("^" + sdgNumber + "\\.\\d\\d? [^_]{2}").test(key))
       .map(key => {
         const [indicatorNumber, label] = key.split(/ (.+)/).filter(x => x)
 
