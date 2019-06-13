@@ -178,7 +178,7 @@ class CountryIndex extends PureComponent {
     return (
       <div>
         <Typography variant="h5" gutterBottom>
-          The European Cities SDG Index
+          Africa SDG Index 2019
         </Typography>
         <Typography variant='body1' style={{color: '#6c757d'}} gutterBottom>
           Select a country to see its full profile.
