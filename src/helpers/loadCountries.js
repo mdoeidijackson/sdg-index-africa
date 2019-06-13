@@ -28,8 +28,8 @@ import Indicator from '../models/Indicator'
 // }
 
 // return the number in the string or null if string is empty
-const numberOrNull = number => {
-  return (typeof number == 'number') ? Number(number) : null
+const numberOrNull = (number, decimals = 0) => {
+  return (typeof number == 'number') ? Number(number).toFixed(decimals) : null
 }
 
 // initialize an individual country
@@ -44,7 +44,7 @@ const initCountry = countryData => {
     // use parseInt because it converts empty strings to NaN
     rank:         numberOrNull(countryData['2019 africa Index Rank']),
     // use parseInt because it converts empty strings to NaN
-    score:        numberOrNull(countryData['2019 africa Index Score (0-100)']),
+    score:        numberOrNull(countryData['2019 africa Index Score (0-100)'], 1),
     sdgs:         []
   })
 }
