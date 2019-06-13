@@ -3,7 +3,7 @@ class Country {
     this.name = name
     this.region = region
     this.score = score
-    this.rank = rank
+    this.rank = new SortableRank(rank)
     this.sdgs = sdgs
   }
 
@@ -25,6 +25,35 @@ class Country {
 
   localeCompare(otherCountry) {
     return this.name.localeCompare(otherCountry.name)
+  }
+}
+
+// Wrapper class for ranking that allows for custom sorting, where null
+// shows up at the end.
+// It is an easier alternative to writing a custom sort method:
+// https://github.com/gregnb/mui-datatables
+class SortableRank {
+  constructor(rank) {
+    this.rank = rank
+  }
+
+  isNaN() {
+    return this.rank === null
+  }
+
+  toString() {
+    return this.isNaN() ? "Not ranked" : this.rank
+  }
+
+  // positive number = appear at end of list
+  // negative number = appear at beginning of list
+  localeCompare(otherRank) {
+    if(this.isNaN())
+      return +1
+    else if(otherRank.isNaN())
+      return -1
+    else
+      return this.rank - otherRank.rank
   }
 }
 

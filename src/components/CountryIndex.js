@@ -158,9 +158,7 @@ class CountryIndex extends PureComponent {
           sort: true,
           sortDirection: 'asc',
           customHeadRender: customHead,
-          customBodyRender: (rank, tableMeta, updateValue) => {
-            return (rank.rank ? rank.rank : "")
-          },
+          customBodyRender: (rank, tableMeta, updateValue) => rank.toString(),
         },
       },
       {
