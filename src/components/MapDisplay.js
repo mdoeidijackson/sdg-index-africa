@@ -1,6 +1,10 @@
 import React, { PureComponent } from 'react'
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 import styled from 'styled-components'
+import SDG from '../models/SDG'
+
+
+const focusScheme = SDG.colorScheme()
 
 const MapSvg = styled(SvgLoader)`
   width: auto;
@@ -20,11 +24,25 @@ const MapSvg = styled(SvgLoader)`
 
     ${props => {
       let templateLiteral = ``
-      props.scheme.forEach(option => {
-        console.log(option['colorName'])
-        console.log(option['mapColor'])
+      props.overallScheme.forEach(option => {
         templateLiteral += `
-          &[data-color="${option['colorName']}"] {
+          &[data-color="overall-${option['colorName']}"] {
+            fill: ${option['mapColor']};
+
+            &:hover {
+              fill: ${option['mapHoverColor']};
+            }
+          }
+        `
+      })
+      return templateLiteral
+    }}
+
+    ${props => {
+      let templateLiteral = ``
+      props.focusScheme.forEach(option => {
+        templateLiteral += `
+          &[data-color="focus-${option['colorName']}"] {
             fill: ${option['mapColor']};
 
             &:hover {
@@ -44,7 +62,7 @@ class MapDisplay extends PureComponent {
       return country.score ? country.score.toString() : "Not scored"
     else {
       const sdg = country.getSDG(focus)
-      return sdg && sdg.score.toString()
+      return (sdg && sdg.score) ? sdg.score.toString() : "Not scored"
     }
   }
 
@@ -56,11 +74,11 @@ class MapDisplay extends PureComponent {
       const { colorSchemeOverallScore } = this.props
       const option = colorSchemeOverallScore.find(option => score === option.threshold || score > option.threshold)
 
-      return option.colorName
+      return `overall-${option.colorName}`
     }
     else {
       const sdg = country.getSDG(focus)
-      return sdg.mapStatusColorName() || 'black'
+      return `focus-${sdg.mapStatusColorName()}`
     }
   }
 
@@ -91,7 +109,10 @@ class MapDisplay extends PureComponent {
     })
 
     return(
-      <MapSvg path="/images/africa.svg" scheme={this.props.colorSchemeOverallScore}>
+      <MapSvg
+        path="/images/africa.svg"
+        overallScheme={this.props.colorSchemeOverallScore}
+        focusScheme={this.props.colorSchemeGoals} >
         {proxies}
       </MapSvg>
     );

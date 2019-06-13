@@ -22,32 +22,32 @@ const COLOR_SCHEME = [{
     colorName: 'green',
     tileColor: '#1c8634',
     mapColor: '#00c600',
-    mapStrokeColor: '#1c8634',
+    mapHoverColor: '#1c8634',
     description: 'SDG achieved'
   },{
     colorName: 'yellow',
     tileColor: '#f2bc3c',
     mapColor: '#ffea00',
-    mapStrokeColor: '#f2bc3c',
+    mapHoverColor: '#f2bc3c',
     description: 'Challenges remain'
   },{
     colorName: 'orange',
     tileColor: '#e9713a',
     mapColor: '#ff7500',
-    mapStrokeColor: '#c35900',
+    mapHoverColor: '#c35900',
     description: 'Significant challenges remain'
   },{
     colorName: 'red',
     tileColor: '#dc3545',
     mapColor: '#c90000',
-    mapStrokeColor: '#710000',
+    mapHoverColor: '#710000',
     description: 'Major challenges remain'
   },{
     colorName: 'gray',
     tileColor: '#5a5a5a',
-    mapColor: '#5a5a5a',
-    mapStrokeColor: '#2d2d2d',
-    description: 'Data missing'
+    mapColor: '#d8d8d8',
+    mapHoverColor: '#979797',
+    description: 'Significant data gaps'
   }
 ]
 
@@ -76,6 +76,11 @@ class SDG {
   // return the color option for this SDG
   getColorOption() {
     return COLOR_SCHEME.find(option => option.colorName === this.status)
+  }
+
+  // return the name for the goal's status color
+  mapStatusColorName() {
+    return this.getColorOption().colorName
   }
 
   // return the light color for the goal's status
