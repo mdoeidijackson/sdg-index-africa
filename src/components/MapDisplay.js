@@ -14,89 +14,84 @@ const MapSvg = styled(SvgLoader)`
   display: block;
   margin: auto;
 
-  #cities circle {
+  .scored {
     transition: all .3s;
     cursor: pointer;
-    stroke-width: 2;
 
-    &:hover {
-      stroke-width: 8;
-    }
+    ${props => {
+      let templateLiteral = ``
+      props.scheme.forEach(option => {
+        console.log(option['colorName'])
+        console.log(option['mapColor'])
+        templateLiteral += `
+          &[data-color="${option['colorName']}"] {
+            fill: ${option['mapColor']};
+
+            &:hover {
+              fill: ${option['mapHoverColor']};
+            }
+          }
+        `
+      })
+      return templateLiteral
+    }}
   }
 `
 
 class MapDisplay extends PureComponent {
-  getCityScore(city, focus) {
+  getCountryScore(country, focus) {
     if(focus === null)
-      return city.score.toString();
+      return country.score ? country.score.toString() : "Not scored"
     else {
-      const sdg = city.getSDG(focus)
+      const sdg = country.getSDG(focus)
       return sdg && sdg.score.toString()
     }
   }
 
-  getCityStrokeColor(city, focus) {
+  getCountryColorName(country, focus) {
     if(focus === null) {
-      const score = city.score
+      const score = country.score
 
       // find the correct HEX value for the score from color scheme
       const { colorSchemeOverallScore } = this.props
-      const option = colorSchemeOverallScore.find(option => score > option.threshold)
+      const option = colorSchemeOverallScore.find(option => score === option.threshold || score > option.threshold)
 
-      return option.mapStrokeColor || 'black'
+      return option.colorName
     }
     else {
-      const sdg = city.getSDG(focus)
-      return sdg.mapStatusStrokeColor() || 'black'
+      const sdg = country.getSDG(focus)
+      return sdg.mapStatusColorName() || 'black'
     }
   }
 
-  getCityColor(city, focus) {
-    if(focus === null) {
-      const score = city.score
-
-      // find the correct HEX value for the score from color scheme
-      const { colorSchemeOverallScore } = this.props
-      const option = colorSchemeOverallScore.find(option => score > option.threshold)
-
-      return option.mapColor || 'black'
-    }
-    else {
-      const sdg = city.getSDG(focus)
-      return sdg.mapStatusColor() || 'black'
-    }
-  }
-
-  getScoreLabel(city, focus) {
+  getScoreLabel(country, focus) {
     if(focus === null)
       return 'Overall Score'
     else {
-      const sdg = city.getSDG(focus)
+      const sdg = country.getSDG(focus)
       return sdg && sdg.getLabel()
     }
   }
 
   render() {
-    const { focus, cities, showTooltip, hideTooltip, openCityDashboard } = this.props
+    const { focus, countries, showTooltip, hideTooltip, openCityDashboard } = this.props
 
-    const proxies = cities && cities.map(city => {
-      return <SvgProxy  key={city.name.toLowerCase()}
-                        selector={`#${city.slug()}`}
-                        data-score={this.getCityScore(city, focus)}
-                        data-label={this.getScoreLabel(city, focus)}
-                        data-city={city.name}
-                        data-url={city.url()}
-                        onMouseOver={showTooltip}
+    const proxies = countries && countries.map(country => {
+      return <SvgProxy  key={country.name.toLowerCase()}
+                        selector={`#${country.slug()}`}
+                        data-score={this.getCountryScore(country, focus)}
+                        data-label={this.getScoreLabel(country, focus)}
+                        data-country={country.name}
+                        data-url={country.url()}
+                        data-color={this.getCountryColorName(country, focus)}
+                        onMouseMove={showTooltip}
                         onMouseOut={hideTooltip}
                         onClick={openCityDashboard}
-                        fill={this.getCityColor(city, focus)}
-                        stroke={this.getCityStrokeColor(city, focus)}
-                        r='12'
                          />
     })
 
     return(
-      <MapSvg path="/images/africa.svg">
+      <MapSvg path="/images/africa.svg" scheme={this.props.colorSchemeOverallScore}>
         {proxies}
       </MapSvg>
     );

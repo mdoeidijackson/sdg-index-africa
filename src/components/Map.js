@@ -13,41 +13,41 @@ import MapDisplay from './MapDisplay'
 const colorSchemeGoals = SDG.colorScheme()
 
 const colorSchemeOverallScore = [{
-    colorName: 'green',
-    mapColor: '#00c600',
-    mapStrokeColor: '#1c8634',
-    description: '> 70',
-    threshold: 70
-  },{
-    colorName: 'light-green',
-    mapColor: '#92e792',
-    mapStrokeColor: '#4fbd4f',
-    description: '65 - 70',
-    threshold: 65
-  },{
-    colorName: 'lime',
-    mapColor: '#d5ff00',
-    mapStrokeColor: '#a2d400',
-    description: '60- 65',
+    colorName: 'darkest-blue',
+    mapColor: '#36869a',
+    mapHoverColor: '#255d6b',
+    description: '> 60',
     threshold: 60
   },{
-    colorName: 'yellow',
-    mapColor: '#ffea00',
-    mapStrokeColor: '#f2bc3c',
-    description: '55 - 60',
-    threshold: 55
-  },{
-    colorName: 'orange',
-    mapColor: '#ff7500',
-    mapStrokeColor: '#c35900',
-    description: '50 - 55',
+    colorName: 'dark-blue',
+    mapColor: '#35b4c9',
+    mapHoverColor: '#2f9db0',
+    description: '50 - 60',
     threshold: 50
   },{
-    colorName: 'red',
-    mapColor: '#c90000',
-    mapStrokeColor: '#710000',
-    description: '< 50',
+    colorName: 'blue',
+    mapColor: '#9ddde7',
+    mapHoverColor: '#6dcddd',
+    description: '40 - 50',
+    threshold: 40
+  },{
+    colorName: 'light-blue',
+    mapColor: '#bfebf5',
+    mapHoverColor: '#97cedb',
+    description: '30 - 40',
+    threshold: 30
+  },{
+    colorName: 'lightest-blue',
+    mapColor: '#ddf5fb',
+    mapHoverColor: '#b3e1ed',
+    description: '< 30',
     threshold: 0
+  },{
+    colorName: 'gray',
+    mapColor: '#d8d8d8',
+    mapHoverColor: '#979797',
+    description: 'Not scored',
+    threshold: null
   }
 ]
 
@@ -113,9 +113,9 @@ class Map extends PureComponent {
   };
 
   render() {
-    const { focus, cities } = this.props
+    const { focus, countries } = this.props
 
-    const { tooltipShow, tooltipAnchor, tooltipCity, tooltipLabel, tooltipScore } = this.state
+    const { tooltipShow, tooltipAnchor, tooltipCountry, tooltipLabel, tooltipScore } = this.state
 
     return(
       <Container style={{position: "sticky", top: 0}}>
@@ -130,7 +130,7 @@ class Map extends PureComponent {
           openCityDashboard={this.openCityDashboard}
           showTooltip={this.showTooltip}
           hideTooltip={this.hideTooltip}
-          {...{cities, focus, colorSchemeGoals, colorSchemeOverallScore}}
+          {...{countries, focus, colorSchemeGoals, colorSchemeOverallScore}}
            />
         <Tooltip
           open={tooltipShow}
@@ -148,7 +148,7 @@ class Map extends PureComponent {
             }
           }}>
           <Typography variant='body2' style={{fontWeight: 500}}>
-            {tooltipCity}
+            {tooltipCountry}
           </Typography>
           <Typography variant='body2'>
             <span>
