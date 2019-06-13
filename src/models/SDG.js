@@ -21,8 +21,8 @@ const SDG_LABELS = [
 const COLOR_SCHEME = [{
     colorName: 'green',
     tileColor: '#1c8634',
-    mapColor: '#00c600',
-    mapHoverColor: '#1c8634',
+    mapColor: '#2a9e2a',
+    mapHoverColor: '#1a6c1a',
     description: 'SDG achieved'
   },{
     colorName: 'yellow',
