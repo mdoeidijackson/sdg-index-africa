@@ -30,6 +30,16 @@ class Trend {
     this.arrow = arrow
   }
 
+  static get options() {
+    return TRENDS
+  }
+
+  static colorFromColorName(colorName) {
+    return SDG.colorScheme()
+              .find(option => option.colorName === colorName)
+              .tileColor
+  }
+
   // return a color for the indicator's status
   get icon() {
     return ICONS[this.arrow]
@@ -41,10 +51,40 @@ class Trend {
 
   // return a color for the indicator's trend
   get color() {
-    return SDG.colorScheme()
-              .find(option => option.colorName === this.trendColorName)
-              .tileColor
+    return Trend.colorFromColorName(this.trendColorName)
   }
 }
+
+const TRENDS = [{
+    name: '↑',
+    icon: ICONS['↑'],
+    description: 'On track or maintaining SDG achievement',
+    colorName: COLOR_NAMES['↑'],
+    color: Trend.colorFromColorName(COLOR_NAMES['↑'])
+  },{
+    name: '➚',
+    icon: ICONS['➚'],
+    description: 'Moderately improving',
+    colorName: COLOR_NAMES['➚'],
+    color: Trend.colorFromColorName(COLOR_NAMES['➚'])
+  },{
+    name: '→',
+    icon: ICONS['→'],
+    description: 'Stagnating',
+    colorName: COLOR_NAMES['→'],
+    color: Trend.colorFromColorName(COLOR_NAMES['→'])
+  },{
+    name: '↓',
+    icon: ICONS['↓'],
+    description: 'Decreasing',
+    colorName: COLOR_NAMES['↓'],
+    color: Trend.colorFromColorName(COLOR_NAMES['↓'])
+  },{
+    name: '.',
+    icon: ICONS['.'],
+    description: 'Information unavailable',
+    colorName: COLOR_NAMES['.'],
+    color: Trend.colorFromColorName(COLOR_NAMES['.'])
+  }]
 
 export default Trend

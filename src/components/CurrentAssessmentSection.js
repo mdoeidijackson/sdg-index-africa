@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import SDGTileCollection from './SDGTileCollection'
 import Divider from './Divider'
 import SDG from '../models/SDG'
+import Trend from '../models/Trend'
 
 const Color = styled.span`
   background-color: ${props => props.hex};
@@ -21,6 +22,16 @@ const Color = styled.span`
   margin-top: 4px;
   margin-bottom: 4px;
   vertical-align: middle;
+`
+
+const TrendIcon = styled.span`
+  color: ${props => props.color};
+  display: inline-block;
+  vertical-align: middle;
+
+  &&, svg {
+    height: 1rem;
+  }
 `
 
 const Description = styled(Typography)`
@@ -45,6 +56,19 @@ class CurrentAssessmentSection extends PureComponent {
       )
     })
 
+    const trends = Trend.options.map(option => {
+      return (
+        <div key={option.name}>
+          <TrendIcon color={option.color}>
+            {option.icon}
+          </TrendIcon>
+          <Description variant='body1' component='span'>
+            {option.description}
+          </Description>
+        </div>
+      )
+    })
+
     return(
       <Box marginBottom={3}>
         <Typography variant="h5" gutterBottom>
@@ -53,7 +77,7 @@ class CurrentAssessmentSection extends PureComponent {
         <Divider />
         <Box marginBottom={1}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={9}>
+            <Grid item xs={12} md={12}>
               <SDGTileCollection
                 columnsMD={6}
                 columnsSM={4}
@@ -67,8 +91,8 @@ class CurrentAssessmentSection extends PureComponent {
                 exclude={[18]}
                 {...{setMapFocus, resetMapFocus}} />
             </Grid>
-            <Grid item xs={12} md={3}>
-              <Card style={{display: 'inline-block'}}>
+            <Grid item xs={12} md={12}>
+              <Card style={{display: 'inline-block', marginRight: '8px'}}>
                 <CardContent>
                   <Typography variant='subtitle1'>
                     Rating
@@ -76,8 +100,16 @@ class CurrentAssessmentSection extends PureComponent {
                   {ratings}
                 </CardContent>
               </Card>
+              <Card style={{display: 'inline-block'}}>
+                <CardContent>
+                  <Typography variant='subtitle1'>
+                    Trend
+                  </Typography>
+                  {trends}
+                </CardContent>
+              </Card>
             </Grid>
-            </Grid>
+          </Grid>
         </Box>
       </Box>
     );
