@@ -1,6 +1,7 @@
 import Country from '../models/Country'
 import SDG from '../models/SDG'
 import Indicator from '../models/Indicator'
+import Trend from '../models/Trend'
 
 // initialize an inidivdual SDG
 const initSDG = (sdgNumber, sdgData) => {
@@ -20,7 +21,7 @@ const initSDG = (sdgNumber, sdgData) => {
           label: label,
           score: score,
           status: status,
-          trend: trend
+          trend: new Trend(trend)
         })
       })
 
@@ -28,6 +29,7 @@ const initSDG = (sdgNumber, sdgData) => {
     number:     Number(sdgNumber),
     score:      numberOrNull(sdgData[`Goal ${sdgNumber} Score`], 1),
     status:     sdgData[`Goal ${sdgNumber} Dashboard`],
+    trend:      new Trend(sdgData[`arrow_goal_${sdgNumber}`]),
     indicators: indicators
   })
 }

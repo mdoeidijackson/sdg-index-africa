@@ -53,10 +53,11 @@ const COLOR_SCHEME = [{
 
 
 class SDG {
-  constructor({number, score, status, indicators}) {
+  constructor({number, score, status, trend, indicators}) {
     this.number     = number
     this.score      = score
     this.status     = status
+    this.trend      = trend
     this.indicators = indicators || []
   }
 

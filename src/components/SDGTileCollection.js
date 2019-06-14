@@ -9,7 +9,7 @@ class SDGTileCollection extends PureComponent {
   render() {
     const { resetMapFocus, setMapFocus,
             columnsMD, columnsSM, columnsXS,
-            width, exclude = [], backgroundColor } = this.props
+            width, exclude = [], trend, backgroundColor } = this.props
 
     let columns = null
 
@@ -32,7 +32,7 @@ class SDGTileCollection extends PureComponent {
       return <SDGTile clickHandler={setMapFocus}
                       key={goal+1}
                       sdg={goal+1}
-                      {...{backgroundColor}} />
+                      {...{backgroundColor, trend}} />
       })
     const sdgTile     = <SDGTile clickHandler={resetMapFocus} key={18} sdg='18' />
 

@@ -7,11 +7,6 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward'
-import CallMadeIcon from '@material-ui/icons/CallMade'
-import RemoveIcon from '@material-ui/icons/Remove'
 
 import Typography from '@material-ui/core/Typography'
 import styled from 'styled-components'
@@ -71,14 +66,6 @@ const FullSizeImage = styled.img`
     margin: auto;
   }
 `
-const trendIcons = {
-  '↑': ArrowUpwardIcon,
-  '➚': CallMadeIcon,
-  '→': ArrowForwardIcon,
-  '↓': ArrowDownwardIcon,
-  '.': RemoveIcon,
-  '':  RemoveIcon
-};
 
 class IndicatorPerformanceSection extends PureComponent {
   render() {
@@ -91,8 +78,7 @@ class IndicatorPerformanceSection extends PureComponent {
     const { score } = sdg
 
     const indicators = sdg.indicators.map(indicator => {
-      const { label } = indicator
-      const TrendIcon = trendIcons[indicator.trend]
+      const { label, trend } = indicator
 
       return (
         <ListItem key={label}>
@@ -102,8 +88,8 @@ class IndicatorPerformanceSection extends PureComponent {
               {indicator.roundedScore()}
             </Typography>
             <Color hex={indicator.statusColor()} />
-            <Trend color={indicator.trendColor()}>
-              <TrendIcon />
+            <Trend color={trend.color}>
+              {trend.icon}
             </Trend>
           </ListItemSecondaryAction>
         </ListItem>

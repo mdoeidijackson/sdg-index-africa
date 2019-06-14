@@ -61,6 +61,9 @@ class CurrentAssessmentSection extends PureComponent {
                 backgroundColor={(sdg) => {
                   return country && country.getSDG(sdg).tileStatusColor()
                 }}
+                trend={(sdg) => {
+                  return country && country.getSDG(sdg).trend
+                }}
                 exclude={[18]}
                 {...{setMapFocus, resetMapFocus}} />
             </Grid>
