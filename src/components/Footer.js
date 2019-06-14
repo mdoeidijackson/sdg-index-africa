@@ -33,8 +33,8 @@ function Footer(props) {
 
             The data displayed in this dashboard is sourced from the
             {' '}
-            <a href='https://www.sdgindex.org/news/2019/05/22/sdg-index-for-european-cities/' target='_blank' rel='noopener noreferrer'>
-              SDG Index and Dashboards Report for European cities
+            <a href='http://unsdsn.org/resources/publications/2019-africa-sdg-index-and-dashboards-report/' target='_blank' rel='noopener noreferrer'>
+              2019 Africa SDG Index and Dashboards Report
             </a>
             . The report was prepared by the
             {' '}
