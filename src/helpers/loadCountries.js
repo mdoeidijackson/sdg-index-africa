@@ -14,11 +14,13 @@ const initSDG = (sdgNumber, sdgData) => {
         // TODO: Refactor .findByObjectKey
         const score  = sdgData[key]
         const status = sdgData[Object.keys(sdgData).find(key => key.startsWith(`${indicatorNumber} __COLOR__`))]
+        const trend  = sdgData[Object.keys(sdgData).find(key => key.startsWith(`${indicatorNumber} __ARROW__`))]
 
         return new Indicator({
           label: label,
           score: score,
-          status: status
+          status: status,
+          trend: trend
         })
       })
 
