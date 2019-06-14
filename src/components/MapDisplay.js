@@ -1,10 +1,6 @@
 import React, { PureComponent } from 'react'
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 import styled from 'styled-components'
-import SDG from '../models/SDG'
-
-
-const focusScheme = SDG.colorScheme()
 
 const MapSvg = styled(SvgLoader)`
   width: auto;
