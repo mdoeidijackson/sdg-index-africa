@@ -51,7 +51,7 @@ const initCountry = countryData => {
     // use parseInt because it converts empty strings to NaN
     rank:   numberOrNull(countryData['2019 africa Index Rank']),
     // use parseInt because it converts empty strings to NaN
-    score:  numberOrNull(countryData['2019 africa Index Score (0-100)'], 1),
+    score:  numberOrNull(countryData['2019 africa Index Score (0-100)'], 2),
     sdgs:   sdgs
   })
 }
