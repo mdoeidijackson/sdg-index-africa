@@ -1,10 +1,12 @@
 import React, { PureComponent } from 'react'
 import ButtonBase from '@material-ui/core/ButtonBase'
+import Grid from '@material-ui/core/Grid'
 import GridListTile from '@material-ui/core/GridListTile'
 import styled from 'styled-components'
 
 const FullSizeImage = styled.img`
   && {
+    display: block;
     left: 0;
     position: default;
     transform: none;
@@ -13,10 +15,12 @@ const FullSizeImage = styled.img`
   }
 `
 
-const TrendSection = styled.div`
+const TrendSection = styled.span`
   color: ${props => props.color};
-  margin: 20px;
-  transform: scale(2);
+
+  svg {
+    transform: scale(2.0);
+  }
 `
 
 class SDGTile extends PureComponent {
@@ -31,16 +35,22 @@ class SDGTile extends PureComponent {
           onClick={clickHandler}
           data-focus={sdg}
           style={{border: '1px solid #eee'}}>
-          <FullSizeImage
-            src={`/images/sdg${sdg}.png`}
-            alt={`SDG ${sdg} icon`}
-            style={{backgroundColor: backgroundColor ? backgroundColor(sdg) : ''}}
-            className={`bg sdg${sdg}`} />
+          <Grid container>
+            <Grid item xs md>
+              <FullSizeImage
+                src={`/images/sdg${sdg}.png`}
+                alt={`SDG ${sdg} icon`}
+                style={{backgroundColor: backgroundColor ? backgroundColor(sdg) : ''}}
+                className={`bg sdg${sdg}`} />
+              </Grid>
           {sdgTrend ? (
-            <TrendSection color={sdgTrend.color}>
-              {sdgTrend.icon}
-            </TrendSection>
+            <Grid item xs={6} md={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+              <TrendSection color={sdgTrend.color}>
+                {sdgTrend.icon}
+              </TrendSection>
+            </Grid>
           ) : null}
+          </Grid>
         </ButtonBase>
       </GridListTile>
     );
