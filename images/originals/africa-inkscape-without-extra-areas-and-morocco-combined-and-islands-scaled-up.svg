@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1016.9212"
-   viewBox="0 0 1016.9212 1016.8005"
+   width="1042.3163"
+   viewBox="0 0 1042.3163 1015.5968"
    version="1.1"
    id="svg86"
-   sodipodi:docname="africa-inkscape-without-extra-areas-and-morocco-combined.svg"
-   height="1016.8005"
+   sodipodi:docname="africa-inkscape-without-extra-areas-and-morocco-combined-and-islands-scaled-up.svg"
+   height="1015.5967"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata92">
@@ -45,17 +45,17 @@
      fit-margin-left="10"
      fit-margin-right="10"
      fit-margin-bottom="10"
-     inkscape:zoom="1.0853802"
-     inkscape:cx="335.67263"
-     inkscape:cy="669.00773"
+     inkscape:zoom="0.7674797"
+     inkscape:cx="556.34558"
+     inkscape:cy="566.57473"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="africa" />
+     inkscape:current-layer="seychelles" />
   <g
      id="africa"
-     transform="matrix(1.59434,0,0,1.59434,-1712.2944,-685.06756)"
-     style="fill:#f9db8e;stroke:#ffffff;stroke-width:0.5;">
+     transform="matrix(1.59434,0,0,1.59434,-1686.1979,-685.66825)"
+     style="fill:#f9db8e;stroke:#ffffff;stroke-width:0.5">
     <path
        id="burkina-faso"
        d="m 1228.88,669.24 c 0.53,-1.39 1.01,-2.99 0.7,-4.47 -0.36,-1.61 0.62,-0.65 1.23,-1.86 0.38,-0.75 1.23,-3.03 0.34,-3.72 -0.6,-0.46 0.59,-1.5 -1.2,-1.98 0.84,0.05 1.36,-0.6 2,-1 1.03,-0.62 2.5,-0.1 3.58,-0.76 1.3,-0.8 2.88,-3.89 1.73,-5.25 -0.55,-0.65 0.25,-1.08 0.96,-1 1.1,0.13 1,-0.86 0.85,-1.72 -0.11,-0.56 -1.22,-1.4 -0.26,-1.73 0.75,-0.26 1.77,-2.36 2.24,-3 -0.06,1.26 2.92,2.77 3.96,2.87 -0.25,-1.2 0.53,-1.04 1.5,-1 -0.12,-1.1 0.42,-2.6 -0.14,-3.6 0.8,0.15 1.65,0.2 2.38,0.64 1.09,-1.64 0.96,-5.23 3.79,-5.53 1.4,-0.14 3.13,2.08 3.4,-0.4 0.15,-1.33 1.62,-1.16 2.53,-1.63 1.17,-0.61 2.08,-1.5 3.3,-2.09 1.48,-0.7 4.17,-4.33 6.23,-2.47 0.39,0.35 1.35,-0.47 1.98,-0.27 0.86,0.26 1.73,0.56 2.54,0.95 1.24,0.6 -1.05,3.77 0.86,4.81 1.18,0.64 0.26,2.64 1.14,3.54 0.5,0.5 1.51,1.54 1.35,2.2 0.94,0.38 3.4,2.04 4.99,3.27 -0.72,0.35 -1.36,0.33 -2.01,-0.15 -0.98,2.5 2.3,5.38 4.28,6.32 1.59,0.75 2.48,-1.14 3.61,-0.81 0.93,0.27 1.1,1.74 1.47,2.48 -2.53,0.87 -0.42,2.32 0.51,4.06 1,1.86 -1.4,4.55 -3.22,4.67 -0.45,0.02 -2.2,0.53 -2.52,0.27 -0.9,-0.71 -1.1,-0.35 -1.84,0.32 -1.47,1.32 -2.3,3.06 -4.19,3.33 -2.9,0.41 -3.41,-0.5 -5.13,-0.83 -0.82,-0.15 -1.6,-0.42 -2.45,-0.43 -0.76,-0.01 -2.72,1.94 -3.28,1.7 -1.36,-0.6 1.63,-0.65 -8.57,-0.62 -3.39,0.01 -5.4,0.24 -8.12,0 0.33,1.55 -1.17,2.36 -0.75,3.3 0.58,1.29 0.86,2.3 1.09,3.65 0.2,1.14 0.3,2.57 0.17,3.85 -0.12,1.13 0.76,2.48 -0.02,3.09 -1.26,-0.94 -2.45,-3.2 -3.3,-4.54 -0.73,1.07 -3.63,-0.21 -4.76,0.22 -1.22,0.47 -3.8,0.84 -3.82,2.59 -0.77,-0.13 -3.5,-1.27 -3.97,-1.86 -0.45,-0.55 -0.91,-0.84 -1,-1.28 -0.16,-0.86 -0.96,-2.5 -1.58,-2.84 -1.04,-0.57 -2.2,0.27 -2.58,-1.3"
@@ -301,135 +301,234 @@
        class="scored land gm"
        inkscape:connector-curvature="0" />
     <g
-       id="cabo-verde"
-       class="scored land coast cv"
-       transform="translate(-29.9,-45.07)">
-      <path
-         id="cabo-verde-1"
-         d="m 1110.6,658.3 c 0.73,0.06 2.4,-1.03 2.05,-1.92 -0.58,-1.47 -3.22,0.45 -2.05,1.92"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-2"
-         d="m 1112.69,659.45 c 2.1,-0.18 -0.8,-1.91 0,0"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-3"
-         d="m 1116.5,676.51 c 0.56,-0.2 1.12,-1.42 0.46,-1.82 -1.14,-0.7 -1.55,1.2 -0.45,1.82"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-4"
-         d="m 1117.66,662.04 c 0.2,-1.65 1.72,-0.03 2.23,-0.94 -0.86,-0.39 -1.99,-0.92 -2.95,-0.57 0.29,0.48 0.53,0.98 0.72,1.51"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-5"
-         d="m 1123.13,675.72 c 1.15,-1.23 -0.76,-2.6 -1.3,-3.6 -0.57,1.47 -0.87,3.54 1.3,3.6"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-6"
-         d="m 1125.87,673.85 c 2.08,-2.13 -2.04,-1.3 0,0"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-7"
-         d="m 1128.96,666.36 c 2.04,-0.81 0.27,-1.87 -0.72,-2.23 0.04,0.9 -0.83,2.25 0.72,2.23"
-         inkscape:connector-curvature="0" />
-      <path
-         id="cabo-verde-8"
-         d="m 1128.24,661.1 c 0.47,-0.69 0.32,-1.47 0.15,-2.23 -0.8,0.65 -0.16,1.44 -0.15,2.23"
-         inkscape:connector-curvature="0" />
+       id="included-islands"
+       style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <g
+         id="seychelles"
+         class="scored land coast sc"
+         transform="matrix(7.59375,0,0,7.59375,-11169.592,-5276.981)">
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.05946963;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1695.1791,799.51048 v 2.01097 h -2.1066 v -0.56444 l 1.5395,-0.003 v -1.44403 z"
+           id="seychelles-outline-origin"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.16519342;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="seychelles-outline"
+           width="3.5648186"
+           height="3.7345726"
+           x="1691.0474"
+           y="797.21533" />
+        <path
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           d="m 1693.5315,800.08137 c 0.104,-0.91 -0.26,-2.041 -1.404,-1.781 0.689,0.364 1.235,1.001 1.404,1.781"
+           id="seychelles-1" />
+      </g>
+      <g
+         class="scored land coast cv"
+         id="cabo-verde"
+         transform="translate(-29.9,-45.07)"
+         style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.45598805;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1132.4691,633.9325 h 18.7047 v 19.59533 h -5.2499 l -0.023,-14.32049 -13.4318,0.0231 z"
+           id="cabo-verde-outline-origin"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:1.25443757;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="cabo-verde-outline"
+           width="51.48642"
+           height="53.938156"
+           x="1094.4144"
+           y="639.20734" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1104.2418,656.66872 c 2.4637,0.2025 8.1,-3.47625 6.9187,-6.48 -1.9575,-4.96125 -10.8675,1.51875 -6.9187,6.48"
+           id="cabo-verde-1"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1108.4703,658.38132 c 7.0875,-0.6075 -2.7,-6.44625 0,0"
+           id="cabo-verde-2"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1114.6653,683.54126 c 1.89,-0.675 3.78,-4.7925 1.5525,-6.1425 -3.8475,-2.3625 -5.2313,4.05 -1.5188,6.1425"
+           id="cabo-verde-3"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1115.1055,661.50968 c 0.675,-5.56875 5.805,-0.10125 7.5263,-3.1725 -2.9025,-1.31625 -6.7163,-3.105 -9.9563,-1.92375 0.9788,1.62 1.7888,3.3075 2.43,5.09625"
+           id="cabo-verde-4"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1125.9933,683.88194 c 3.8812,-4.15125 -2.565,-8.775 -4.3875,-12.15 -1.9238,4.96125 -2.9363,11.9475 4.3875,12.15"
+           id="cabo-verde-5"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1128.8173,678.92497 c 7.02,-7.18875 -6.885,-4.3875 0,0"
+           id="cabo-verde-6"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1133.4594,668.55737 c 6.885,-2.73375 0.9112,-6.31125 -2.43,-7.52625 0.135,3.0375 -2.8013,7.59375 2.43,7.52625"
+           id="cabo-verde-7"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1132.3318,660.66757 c 1.5863,-2.32875 1.08,-4.96125 0.5063,-7.52625 -2.7,2.19375 -0.54,4.86 -0.5063,7.52625"
+           id="cabo-verde-8"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         id="mauritius"
+         class="scored land coast mu"
+         transform="matrix(2.25,0,0,2.25,-2129.7101,-1168.565)">
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.55752778;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="mauritius-outline"
+           width="11.744102"
+           height="12.303347"
+           x="1690.7284"
+           y="934.3963" />
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.20071001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1697.6361,932.60702 h 6.625 v 6.94042 h -1.8595 l -0.01,-5.07213 -4.7573,0.008 z"
+           id="mauritius-outline-origin"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <path
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           d="m 1697.4089,937.7 c -0.53,0.55 -3.04,4.26 -1.3,4.47 2.79,0.34 3.14,-4.87 1.3,-4.47"
+           id="mauritius-1" />
+      </g>
+      <g
+         id="sao-tome-and-principe"
+         class="scored land coast st"
+         transform="translate(-39.146069,-39.869086)"
+         style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <path
+           id="sao-tome-and-principe-1"
+           d="m 1342.1634,807.74613 c 2.295,-1.24875 4.725,-3.20625 5.535,-5.805 0.405,-1.35 0.2025,-5.83875 -2.3625,-5.13 -5.805,1.62 -3.8475,6.75 -3.1725,10.935"
+           inkscape:connector-curvature="0"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           id="sao-tome-and-principe-2"
+           d="m 1350.6827,792.62337 c 1.08,-1.62 1.1813,-3.34125 0.3038,-5.0625 -2.025,1.38375 -2.1263,3.4425 -0.27,5.0625"
+           inkscape:connector-curvature="0"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.45572805;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1348.9372,774.82578 h 18.7047 v 19.59533 h -5.2499 l -0.023,-14.32049 -13.4318,0.0231 z"
+           id="sao-tome-and-principe-outline-origin"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:1.25443757;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="sao-tome-and-principe-outline"
+           width="33.157875"
+           height="34.736824"
+           x="1329.4343"
+           y="779.87738" />
+      </g>
+      <g
+         transform="translate(-29.9,-45.07)"
+         class="scored land coast km"
+         id="comoros"
+         style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+        <path
+           style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:0.45572805;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1642.1149,917.36413 h -18.7047 V 897.7688 h 5.2499 l 0.023,14.32049 13.4318,-0.0231 z"
+           id="comoros-outline-origin"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#b9b9b9;stroke-width:1.25443757;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="comoros-outline"
+           width="33.157875"
+           height="34.736824"
+           x="1628.6831"
+           y="877.35248" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1639.1154,901.35205 c 1.485,-1.35 0.5737,-3.94875 -0.034,-5.4675 -1.5188,-3.78 -0.5738,-7.32375 -1.6875,-11.07 -4.6575,-0.135 -2.6325,6.0075 -3.6788,8.67375 -1.62,4.185 3.375,5.29875 5.4,7.86375"
+           id="comoros-1"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1646.5995,906.91246 c -0.81,-2.3625 -2.97,-4.185 -5.6025,-3.67875 0,3.375 3.2062,3.1725 5.6025,3.7125"
+           id="comoros-2"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1654.4131,907.37823 c 2.8688,-7.425 -2.835,-4.62375 -7.29,-5.83875 2.4975,1.85625 5.2313,3.4425 7.29,5.83875"
+           id="comoros-3"
+           style="stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
     </g>
     <g
-       id="comoros"
-       class="scored land coast km"
-       transform="translate(-29.9,-45.07)">
+       id="excluded-islands"
+       style="opacity:0">
       <path
-         id="comoros-1"
-         d="m 1630.88,907.92 c 0.44,-0.4 0.17,-1.17 -0.01,-1.62 -0.45,-1.12 -0.17,-2.17 -0.5,-3.28 -1.38,-0.04 -0.78,1.78 -1.09,2.57 -0.48,1.24 1,1.57 1.6,2.33"
+         id="mayotte"
+         d="m 1613.43,871.99 c 0.47,-0.64 1.08,-2.02 0,-2.45 -0.28,0.56 -0.41,1.92 0,2.45"
+         class="no-score land coast yt"
          inkscape:connector-curvature="0" />
       <path
-         id="comoros-2"
-         d="m 1633.76,911.81 c -0.24,-0.7 -0.88,-1.24 -1.66,-1.09 0,1 0.95,0.94 1.66,1.1"
+         inkscape:connector-curvature="0"
+         class="no-score land coast pt-30"
+         d="m 1150.97,477.14 a 3.52,3.52 0 0 1 -1.83,-1.04 c -0.4,-0.4 0.36,-1.03 0.79,-0.58 0.56,0.6 1.36,-0.35 2,0.37 0.7,0.8 -0.14,1.45 -0.96,1.25"
+         id="madeira" />
+      <path
+         id="reunion"
+         d="m 1689.46,941.26 c -0.11,-1.99 -3.99,-0.81 -3.55,1.09 0.67,2.86 6.03,3.1 3.55,-1.1"
+         class="no-score land coast re"
          inkscape:connector-curvature="0" />
       <path
-         id="comoros-3"
-         d="m 1638.8,911.73 c 0.85,-2.2 -0.84,-1.37 -2.16,-1.73 0.74,0.55 1.55,1.02 2.16,1.73"
+         id="st-helena"
+         d="m 1220.33,908.36 c 0.31,-0.49 0.34,-1 0.08,-1.51 -0.6,0.41 -0.63,1.03 -0.08,1.5"
+         class="no-score land coast sh"
          inkscape:connector-curvature="0" />
+      <g
+         transform="translate(-29.9,-45.07)"
+         class="no-score land coast es-cn"
+         id="canarias">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1170.08,565.49 c -1.08,-0.72 -0.22,-1.85 0.86,-1.51 -0.2,0.55 -0.5,1.05 -0.86,1.5"
+           id="canarias-1" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1172.09,557.78 -0.65,0.44 c -0.1,-0.74 -1.45,-2.75 -0.07,-3.03 1.54,-0.3 1.26,1.82 0.72,2.6"
+           id="canarias-2" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1175.83,562.32 c -0.73,-0.45 -0.77,-1.8 0.36,-1.58 1.18,0.23 0.45,1.47 -0.36,1.58"
+           id="canarias-3" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1179.94,562.54 c -0.6,-1.02 -0.91,-2.16 -1.51,-3.17 2.17,-0.51 3.82,-1.19 5.9,-2.02 -0.75,1.6 -2.66,4.54 -4.4,5.19"
+           id="canarias-4" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1187.86,564.7 c -1.78,-0.26 -2.08,-3.15 -0.25,-3.56 2.82,-0.62 1.96,2.76 0.25,3.56"
+           id="canarias-5" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1197.29,561.96 -0.65,-0.43 c 2.13,-0.7 2.4,-3.97 3.94,-5.44 0.98,-0.93 0.46,2.7 0.32,3.07 -0.66,1.68 -2.46,1.65 -3.61,2.8"
+           id="canarias-6" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1201.76,555.12 -0.72,-0.29 c 0.3,-0.65 2.62,-3.68 3.16,-2.19 0.45,1.25 -1.81,1.83 -2.44,2.48"
+           id="canarias-7" />
+      </g>
     </g>
-    <path
-       id="mauritius"
-       d="m 1704.15,932.62 c -0.53,0.55 -3.04,4.26 -1.3,4.47 2.79,0.34 3.14,-4.87 1.3,-4.47"
-       class="scored land coast mu"
-       inkscape:connector-curvature="0" />
-    <g
-       id="sao-tome-and-principe"
-       class="scored land coast st"
-       transform="translate(-29.9,-45.07)">
-      <path
-         id="sao-tome-and-principe-1"
-         d="m 1350.22,804.45 c 0.68,-0.37 1.4,-0.95 1.64,-1.72 0.12,-0.4 0.06,-1.73 -0.7,-1.52 -1.72,0.48 -1.14,2 -0.94,3.24"
-         inkscape:connector-curvature="0" />
-      <path
-         id="sao-tome-and-principe-2"
-         d="m 1356.9,791.42 c 0.32,-0.48 0.35,-0.99 0.09,-1.5 -0.6,0.41 -0.63,1.02 -0.08,1.5"
-         inkscape:connector-curvature="0" />
-    </g>
-    <path
-       id="seychelles"
-       d="m 1694.5,801 c 0.08,-0.7 -0.2,-1.57 -1.08,-1.37 0.53,0.28 0.95,0.77 1.08,1.37"
-       class="scored land coast sc"
-       inkscape:connector-curvature="0" />
-    <path
-       id="madeira"
-       d="m 1150.97,477.14 a 3.52,3.52 0 0 1 -1.83,-1.04 c -0.4,-0.4 0.36,-1.03 0.79,-0.58 0.56,0.6 1.36,-0.35 2,0.37 0.7,0.8 -0.14,1.45 -0.96,1.25"
-       class="no-score land coast pt-30"
-       inkscape:connector-curvature="0" />
-    <g
-       id="canarias"
-       class="no-score land coast es-cn"
-       transform="translate(-29.9,-45.07)">
-      <path
-         id="canarias-1"
-         d="m 1170.08,565.49 c -1.08,-0.72 -0.22,-1.85 0.86,-1.51 -0.2,0.55 -0.5,1.05 -0.86,1.5"
-         inkscape:connector-curvature="0" />
-      <path
-         id="canarias-2"
-         d="m 1172.09,557.78 -0.65,0.44 c -0.1,-0.74 -1.45,-2.75 -0.07,-3.03 1.54,-0.3 1.26,1.82 0.72,2.6"
-         inkscape:connector-curvature="0" />
-      <path
-         id="canarias-3"
-         d="m 1175.83,562.32 c -0.73,-0.45 -0.77,-1.8 0.36,-1.58 1.18,0.23 0.45,1.47 -0.36,1.58"
-         inkscape:connector-curvature="0" />
-      <path
-         id="canarias-4"
-         d="m 1179.94,562.54 c -0.6,-1.02 -0.91,-2.16 -1.51,-3.17 2.17,-0.51 3.82,-1.19 5.9,-2.02 -0.75,1.6 -2.66,4.54 -4.4,5.19"
-         inkscape:connector-curvature="0" />
-      <path
-         id="canarias-5"
-         d="m 1187.86,564.7 c -1.78,-0.26 -2.08,-3.15 -0.25,-3.56 2.82,-0.62 1.96,2.76 0.25,3.56"
-         inkscape:connector-curvature="0" />
-      <path
-         id="canarias-6"
-         d="m 1197.29,561.96 -0.65,-0.43 c 2.13,-0.7 2.4,-3.97 3.94,-5.44 0.98,-0.93 0.46,2.7 0.32,3.07 -0.66,1.68 -2.46,1.65 -3.61,2.8"
-         inkscape:connector-curvature="0" />
-      <path
-         id="canarias-7"
-         d="m 1201.76,555.12 -0.72,-0.29 c 0.3,-0.65 2.62,-3.68 3.16,-2.19 0.45,1.25 -1.81,1.83 -2.44,2.48"
-         inkscape:connector-curvature="0" />
-    </g>
-    <path
-       id="mayotte"
-       d="m 1613.43,871.99 c 0.47,-0.64 1.08,-2.02 0,-2.45 -0.28,0.56 -0.41,1.92 0,2.45"
-       class="no-score land coast yt"
-       inkscape:connector-curvature="0" />
-    <path
-       id="reunion"
-       d="m 1689.46,941.26 c -0.11,-1.99 -3.99,-0.81 -3.55,1.09 0.67,2.86 6.03,3.1 3.55,-1.1"
-       class="no-score land coast re"
-       inkscape:connector-curvature="0" />
-    <path
-       id="st-helena"
-       d="m 1220.33,908.36 c 0.31,-0.49 0.34,-1 0.08,-1.51 -0.6,0.41 -0.63,1.03 -0.08,1.5"
-       class="no-score land coast sh"
-       inkscape:connector-curvature="0" />
     <path
        id="sudan"
        class="scored "
