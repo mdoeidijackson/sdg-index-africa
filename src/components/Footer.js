@@ -33,7 +33,7 @@ function Footer(props) {
 
             The data displayed in this dashboard is sourced from the
             {' '}
-            <a href='http://unsdsn.org/resources/publications/2019-africa-sdg-index-and-dashboards-report/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://s3.amazonaws.com/sustainabledevelopment.report/2019/2019_africa_index_and_dashboards.pdf' target='_blank' rel='noopener noreferrer'>
               2019 Africa SDG Index and Dashboards Report
             </a>
             . The report was prepared by the
