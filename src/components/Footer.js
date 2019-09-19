@@ -48,32 +48,6 @@ function Footer(props) {
               Sustainable Development Goals Center for Africa
             </a>
             .
-            <br/><br/>
-            This website is an
-            {' '}
-            <a href="https://github.com/sdsna/sdg-index-european-cities" target='_blank' rel='noopener noreferrer'>
-              open source passion project
-            </a>
-            {' '}
-            by
-            {' '}
-            <a href='https://twitter.com/FinnWoelm' target='_blank' rel='noopener noreferrer'>
-              @FinnWoelm
-            </a>
-            {' '}
-            in collaboration with the
-            {' '}
-            <a href='https://www.sdgindex.org/' target='_blank' rel='noopener noreferrer'>
-              SDG Index
-            </a>
-            {' '}
-            team. If you have
-            comments, suggestions, or find an inaccuracy, please
-            {' '}
-            <a href='https://twitter.com/FinnWoelm' target='_blank' rel='noopener noreferrer'>
-              send me a tweet
-            </a>
-            .
           </Typography>
         </Box>
       </Grid>
